@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Chrome, Firefox OS and Opera Status Bar Color -->
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+<link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/notablog.css">
+<!-- Favicon -->
+
+<style>
+  :root {
+    font-size: 20px;
+  }
+</style>
+  <title>对于概率的思考&nbsp;|&nbsp;Yer’s Blog</title>
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="对于概率的思考">
+  
+    <meta name="description" content="世界上所有事件都是客观法则的组合发展，组合的结果符合一定的规律。">
+    <meta property="og:description" content="世界上所有事件都是客观法则的组合发展，组合的结果符合一定的规律。">
+  
+  
+    <meta property="og:image" content="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🕛&lt;/text&gt;&lt;/svg&gt;">
+  
+  <style>
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+  <a href="index.html">
+    <div class="Navbar__Btn">
+      
+      <span>Home</span>
+    </div>
+  </a>
+  
+    
+  
+    
+      <span class="Navbar__Delim">&centerdot;</span>
+      <a href="contact.html">
+        <div class="Navbar__Btn">
+          
+            <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📩&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+          
+          <span>Contact</span>
+        </div>
+      </a>
+    
+  
+    
+      <span class="Navbar__Delim">&centerdot;</span>
+      <a href="about.html">
+        <div class="Navbar__Btn">
+          
+            <span><img class="inline-img-icon" src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fbb67d309-17a0-429f-a078-330ad693e343%2F20220929142744_be321.thumb.1000_0.jpg?table=block&amp;id=d5a59a61-1277-4c7e-be2a-a5e0ddba4f6b"></span>&nbsp;
+          
+          <span>About</span>
+        </div>
+      </a>
+    
+  
+</nav>
+  <header class="Header">
+    
+      <div class="Header__Cover">
+        <img src="https://www.notion.so/images/page-cover/woodcuts_8.jpg">
+      </div>
+    
+    <div class="Header__Spacer ">
+    </div>
+    
+      <div class="Header__Icon">
+        <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🕛&lt;/text&gt;&lt;/svg&gt;"></span>
+      </div>
+    
+    <h1 class="Header__Title">对于概率的思考</h1>
+    
+      <div class="DateTagBar">
+        
+          <span class="DateTagBar__Item DateTagBar__Date">Posted on Sat, Feb 25, 2023</span>
+        
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--default">
+            <a href="tag/math.html">math</a>
+          </span>
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--pink">
+            <a href="tag/概率论.html">概率论</a>
+          </span>
+        
+      </div>
+    
+  </header>
+  <article id="https://www.notion.so/06de5672828e4234a43bbbfda1a24a3a" class="PageRoot"><div id="https://www.notion.so/7ee213e5ecf54877af8957d34d4dfd88" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">概率分为三个派系：频率派、古典派、主观派。（来自马同学概率论）</span></span></p></div><div id="https://www.notion.so/037766952dd64405b0f2b0ec20716198" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">其中频率派的思想是：如果频率存在稳定性，那么当实验次数n趋于∞时得到的频率即为概率。说白了就是过往事实的总结。这种思想有以下两个漏洞：第一我们不可能做无穷次实验，第二我们很难保证每次实验时的其他条件相同。</span></span></p></div><div id="https://www.notion.so/516111793d0e4df08405bc6d168aa7d5" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">其中古典派的思想是：未知的概率就是等概率，这是基于不充分理由原则（如果无法判断哪一个结果更容易出现，那就应该给予他们相同的概率）的。这一派别我认为只存在一种漏洞：那就是伯特兰悖论，即同一问题从不同角度出发，我们得到的结果的基数是不同的，这就导致某一结果的概率存在矛盾。</span></span></p></div><div id="https://www.notion.so/0b96d51bee7f42f49181fab67613b7ce" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">最后是主观派的思想：主观派的想法很直接，所谓概率，就是人对于某一命题的信念强度。这一观点的缺陷有两个：第一，说到科学大家都认为应该是客观的，但偏偏主管概率是不客观的；第二，正是因为主观，所以很难达成共识。</span></span></p></div><div id="https://www.notion.so/ae95782334394ef1a2e58d54b3729edc" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">而在我看来其实三个派系相辅相成，首先我认为古典派和主观派是一个派系，因为未知所以主观认为各结果相同，古典派就是主观派的初始，即没有经过“频率统计”的状态。而频率派实际上也应该是归属于主观派的，频率影响了主观的看法，最初主观没有看法，而频率会逐渐让主观学习，即增加信念强度，前面提到的主观不同意，其实这恰恰才是客观的，即主观是客观产生的，人们的主观看法不一样恰恰是因为人们所处的环境不同，从客观环境学习的内容不同而产生的分歧，如果说不同环境不同“频率”让人产生统一的主观，这才是不客观的。</span></span></p></div><div id="https://www.notion.so/7c92822c3b124b6b9335aeab4948fd3d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">另：其实机器学习的原理也是以上三种派别的综合，初始时机器没有学习，所以它的判断应当都是一样的（除非人为设定初始概率），在样本的学习中（经历频率），建立起了机器“主观的知识”。总结一下：古典派是主观派的初始，频率派是主观派的营养，主观派实际是客观的产物。</span></span></p></div><div id="https://www.notion.so/49c614a74da1403ea570f12b91cee1da" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></article>
+  <footer class="Footer">
+  <div>&copy; Yer’s Blog 2022</div>
+  <div>&centerdot;</div>
+  <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+      rel="noopener noreferrer">Notablog</a>.
+  </div>
+</footer>
+</body>
+
+</html>
