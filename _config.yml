@@ -1,0 +1,41 @@
+title:              YerBlog
+description:        This is Yer's Blog!
+author:             jinyery
+email:              yjy@yer.xyz
+baseurl:            ""
+url:                "https://blog.yer.xyz"
+
+# Social Profiles
+zhihu_username:     jinyery
+weibo_username:     jinyery
+github_username:    jinyery
+twitter_username:   jinyery
+facebook_username:  
+linkedin_username:  
+instagram_username: 
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   G-T9VK0B91VM
+
+# Build settings
+markdown:           kramdown
+remote_theme:       jinyery/YerBlogTheme
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap 
+  - jekyll-remote-theme
+
+# Website registration number in Chinese Mainland.
+icp: 
+
+# Add your custom nav item to the nav bar.
+# Note that this item cannot be an array, as our philosophy is restraint.
+special_nav_item: 
+special_nav_link: 
+
+# A Lightweight Blog Comment System Based on Github Issues: Utterances.
+# You can refer to https://utteranc.es/
+utterances_repo:    jinyery/jinyery.github.io
+utterances_label:   
+utterances_theme:   # default to github-light
+utterances_issue_term: # default to pathname
