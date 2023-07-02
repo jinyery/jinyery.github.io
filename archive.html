@@ -1,34 +1,6 @@
 ---
-layout: page
+layout: archive
 title: Archive
 background: '/assets/img/bg-archive.jpg'
 description: 也許時間是一種解藥 也是我現在正服下的毒藥
 ---
-<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
-
-<div id="archive_app">
-    <div id="archive_tags">
-        <template v-for="tag in all_tags">
-            {% raw %}
-            {{tag}}
-            {% endraw %}
-        </template>
-    </div>
-    
-
-    <div id="archive_content">
-        <template v-for="post in all_posts" v-show="selected_tag == 'all'">
-
-        </template>
-    </div>
-</div>
-
-<script>
-    new Vue({
-        el: '#archive_app',
-        data: {
-            selected_tag: "all",
-            all_tags: [{% for tag in site.tags %}"{{tag[0]}}",{% endfor %}],
-        }
-    });
-</script>
