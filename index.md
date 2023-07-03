@@ -2,5 +2,5 @@
 layout: home
 title: Yer Y
 description: 不怨天，不尤人。
-background: '/assets/img/bg-index.jpg'
+background: '/assets/page/bg-index.jpg'
 ---
